@@ -92,14 +92,14 @@ namespace rage
 		virtual void StopAnimation() = 0;
 
 		virtual const clothData_t& GetClothes(uint8_t id) = 0;
-		virtual void SetClothes(uint8_t id, const clothData_t& clothes) = 0;
+		virtual void SetClothes(uint8_t id, const clothData_t clothes) = 0;
 
-		virtual void SetClothes(const std::vector<std::pair<uint8_t, const clothData_t>>& clothes) = 0;
+		virtual void SetClothes(const std::vector<std::pair<uint8_t, const clothData_t>> clothes) = 0;
 
 		virtual const propData_t& GetProp(uint8_t id) = 0;
 		virtual void SetProp(uint8_t id, const propData_t prop) = 0;
 
-		virtual void SetProp(const std::vector<std::pair<uint8_t, const propData_t>>& clothes) = 0;
+		virtual void SetProp(const std::vector<std::pair<uint8_t, const propData_t>> clothes) = 0;
 
 		virtual void SetCustomization(bool gender, 
 			const rage::headBlend_t& headBlend,
