@@ -231,11 +231,11 @@ namespace rage
 
 		template<class T>
 		void External(T *val) { this->SetExternalValue(reinterpret_cast<void*>(val)); }
-		
-		virtual const arg_t& GetVariable(const std::string& key) = 0;
-		virtual void SetVariable(const std::string& key, const arg_t& arg) = 0;
-		virtual void SetVariables(const std::vector<std::pair<const std::string, const arg_t&>>& vars) = 0;
-		virtual bool HasVariable(const std::string& key) = 0;
+
+		virtual const arg_t& GetVariable(uint64_t key) = 0;
+		virtual void SetVariable(uint64_t key, const arg_t& arg) = 0;
+		virtual void SetVariables(const std::vector<std::pair<uint64_t, const arg_t&>>& vars) = 0;
+		virtual bool HasVariable(uint64_t key) = 0;
 	};
 
 	template<class T>
